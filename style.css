@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@3000;600&display=swap");
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter" sans-serif;
+    background:linear-gradient(45deg, #131086, #b621f3);
+    padding: 40px;
+}
+
+.container{
+    min-height: calc(100vh - 40px * 2);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius:10px ;
+    overflow: hidden;
+}
+
+.login-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: content;
+    padding-left: 150px;
+    background-color: white; 
+}
+
+.login-right{
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+}
+
+.login-form{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 70px;
+}
+
+.form-item label:not(.checkboxLabel){
+    display:inline-block;
+    background-color: white;
+}
+
+input[type='text'],
+input[type='password']{
+    border:1px solid black;
+    height: 55px;
+    padding: 0 2em;
+    width: 100%;
+    outline: none;
+    transition: background .5s;
+    font-size: 18px;
+    border-radius: 100px;
+}
+
